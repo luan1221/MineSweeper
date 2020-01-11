@@ -14,14 +14,13 @@ class Map {
 
     public void initField() {
         Random rand = new Random();
-        int x, y, a, b;
+        int x, y;
 
         for (int i = 0;  i < 10; i++) {
             x = rand.nextInt(1000);
             y = rand.nextInt(1000);
             x = x % (this.diff.k - 1);
             y = y % (this.diff.k - 1);
-            System.out.println(x + " " + y);
             if (this.field[x][y] == -1) {
                 if (x == this.diff.k-1) {
                     if (y == this.diff.k-1) {
