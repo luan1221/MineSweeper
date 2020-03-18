@@ -1,6 +1,6 @@
 public enum Difficulty {
     
-    EASY(9), HARD(16);
+    EASY(9), MEDIUM(16), HARD(32);
 
     public int k;
 
